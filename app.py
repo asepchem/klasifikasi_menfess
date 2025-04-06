@@ -28,9 +28,9 @@ if "admin_logged_in" not in st.session_state:
 # -------------------------------
 @st.cache_resource
 def load_model_and_vectorizer():
-    with open("model.pkl", "rb") as f:
+    with open("model_menfess.pkl", "rb") as f:
         model = pickle.load(f)
-    with open("vectorizer.pkl", "rb") as f:
+    with open("vectorizer_menfess.pkl", "rb") as f:
         vectorizer = pickle.load(f)
     return model, vectorizer
 
